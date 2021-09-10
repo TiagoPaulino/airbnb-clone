@@ -1,0 +1,135 @@
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0px;
+    color: #222222;
+}
+#main-container{
+    width: 320px;
+    border: solid 1px black;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+header .pesquisa{
+    width: 80%;
+}
+header .pesquisa input{
+    border-radius: 50px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    background-color: #dddddd;
+}
+section{
+    padding: 20px 0px;
+}
+section h3{
+    font-size: 22px;
+    padding: 0px 20px;
+}
+#chamada{
+    height: 470px;
+    background-image: url(/assets/asset\ 0.webp);
+    background-size: cover;
+}
+#chamada .container{
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+#chamada h1{
+    font-size: 18px;
+    text-align: center;
+}
+#perto .selector{
+    padding: 15px 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    row-gap: 15px;
+    overflow-x: scroll;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+#perto .selector::-webkit-scrollbar{
+    height: 0px;
+    opacity: 0;
+}
+#perto .selector:hover::-webkit-scrollbar{
+    height: 3px;
+    background-color: #dddddd;
+    opacity: 0.2;
+    margin-bottom: -3px;
+    box-sizing: border-box;
+}
+#perto .selector::-webkit-scrollbar-thumb{
+    height: 3px;
+    background-color: #ff385c;
+}
+#perto .selector .destino{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: 228px;
+}
+#perto .selector .destino figure{
+    height: 72px;
+    width: 72px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 0px;
+}
+#perto .selector .destino figure img{
+    width: 100%;
+    height: 100%;
+}
+#perto .selector .destino .descricao{
+    margin-left: 10px;
+    
+}
+#perto .selector .destino .descricao h5{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+#perto .selector .destino .descricao small{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+#more .selector{
+    padding-left: 20px;
+}
+#more .selector .viajem{
+    display: flex;
+    flex-flow: column;
+
+}
+#more .selector .viajem figure{
+    height: 228px;
+    width: 228px;
+    border-radius: 15px;
+    margin: 0px;
+    overflow:hidden;
+}
+#more .selector .viajem figure img{
+    height: 100%;
+    width: 100%;
+}
+
+#more .selector .viajem figure h5{}
