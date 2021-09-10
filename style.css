@@ -5,16 +5,17 @@ body{
     color: #000;
     display: flex;
     justify-content: center;
+    margin: 0px;
 
 }
 h1,h2,h3,h4,h5,h6{
     margin: 0px;
     color: #222222;
 }
-#main-container{
-    width: 320px;
+ #main-container{
+    width: 100vw;
     border: solid 1px black;
-}
+} 
 header{
     display: flex;
     justify-content: center;
@@ -29,7 +30,7 @@ header .pesquisa input{
     height: 40px;
     width: 100%;
     border: none;
-    background-color: #dddddd;
+    background-color: #eeeeee;
 }
 section{
     padding: 20px 0px;
@@ -65,20 +66,13 @@ section h3{
     padding-left: 20px;
     box-sizing: border-box;
 }
-#perto .selector::-webkit-scrollbar{
-    height: 0px;
+.selector::-webkit-scrollbar{
+    height: 15px;
     opacity: 0;
 }
-#perto .selector:hover::-webkit-scrollbar{
-    height: 3px;
-    background-color: #dddddd;
-    opacity: 0.2;
-    margin-bottom: -3px;
-    box-sizing: border-box;
-}
-#perto .selector::-webkit-scrollbar-thumb{
-    height: 3px;
-    background-color: #ff385c;
+.selector:hover::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: solid 3px #ff385c;
 }
 #perto .selector .destino{
     display: flex;
@@ -102,7 +96,7 @@ section h3{
     
 }
 #perto .selector .destino .descricao h5{
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     margin-bottom: 5px;
 }
@@ -113,7 +107,13 @@ section h3{
 
 
 #more .selector{
-    padding-left: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    column-gap: 10px;
+
 }
 #more .selector .viajem{
     display: flex;
@@ -123,9 +123,10 @@ section h3{
 #more .selector .viajem figure{
     height: 228px;
     width: 228px;
-    border-radius: 15px;
+    border-radius: 5px;
     margin: 0px;
     overflow:hidden;
+    margin-bottom: 15px;
 }
 #more .selector .viajem figure img{
     height: 100%;
@@ -133,3 +134,65 @@ section h3{
 }
 
 #more .selector .viajem figure h5{}
+
+#hospedar{
+}
+#hospedar .info{
+    margin: 0px auto;
+    height: 390px;
+    width: 320px;
+    background-image: url(/assets/asset\ 13.webp);
+    background-size: cover;
+    border-radius:15px;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#hospedar .info .texto{
+    color:#fff;
+}
+#hospedar .info .texto h3{
+    color:#fff;
+    font-size: 19px;
+}
+#hospedar .info .texto p{
+    padding-top: 8px;
+    font-size: 14px;
+}
+#hospedar .info .texto a{
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color:#222222;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 9px 16px;
+}
+
+#descubra .selector{
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    column-gap: 10px;
+
+}
+
+#descubra .selector .experiencias{
+    display: flex;
+    flex-flow: column;
+
+}
+#descubra .selector .experiencias figure{
+    height: 228px;
+    width: 228px;
+    border-radius: 5px;
+    margin: 0px;
+    overflow:hidden;
+    margin-bottom: 15px;
+}
+#descubra .selector .experiencias figure img{
+    height: 100%;
+    width: 100%;
+}
