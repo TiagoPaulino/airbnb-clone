@@ -8,19 +8,71 @@
     <link rel="stylesheet" href="style.css">
     <title>Modo app</title>
 </head>
+<script>
+    function myFunction(){
+        var element = document.getElementById("perfil-menu");
+        element.classList.toggle("hidden");
+        
+    }
+</script>
 <body>
-    <div id="main-container">
+    
         <div id="chamada">
-            <Header>
-                <div class="pesquisa">
-                    <input type="text">
+            <div class="main-container">
+                <div class="top-menu">
+                    <div class="logo">
+                        <figure>
+                            <img src="assets/asset 16.svg" alt="">
+                        </figure>
+                    </div>
+                    <nav class="navegacao">
+                        <a href="#">Lugares para ficar</a>
+                        <a href="#">Experiencias</a>
+                        <a href="#">Experiencias Online</a>
+                    </nav>
+                    <div class="user-section">
+                        <a class="ser-anfitriao" href="#">Seja um Anfitrião</a>
+                        <a class="lingua" href="#">
+                            <figure>
+                                <img src="assets/globo.svg" alt="">
+                            </figure>
+                        </a>
+                        <div class="perfil" onclick="myFunction()">
+                            <figure>
+                                <img src="/assets/asset 21.svg" alt="menu-hamburg">
+                            </figure>
+                            <figure>
+                                <img class="avatar" src="/assets/asset 22.svg" alt="Avatar">
+                            </figure>
+
+                            <div class="perfil-menu .hidden" id="perfil-menu">
+                                <ul>
+                                    <li><a href="#">Cadastrar-se</a></li>
+                                    <li><a href="#">Entrar</a></li>
+                                    <li><a href="#">Hospede sua Acomodação</a></li>
+                                    <li><a href="#">Hospede uma experiencia</a></li>
+                                    <li><a href="#">Ajuda</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </Header>
-            <div class="container">
-                <h1>Está na dúvida de onde ir?
-                    Tudo bem!</h1>
+
+                <Header>
+                    <div class="pesquisa">
+                        <input type="text">
+                        <figure>
+                            <img src="/assets/pesquisa.svg" alt="">
+                        </figure>
+                    </div>
+                </Header>
+                <div class="container">
+                    <h1>Está na dúvida de onde ir?
+                        Tudo bem!</h1>
+                </div>
             </div>
         </div>
+        <div class="main-container">
         <section id="perto">
             <div class="container">
                 <h3>Explore destinos perto de você</h3>

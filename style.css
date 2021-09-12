@@ -6,6 +6,7 @@ body{
     color: #000;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin: 0px;
     font-family: 'Circular Std Book';
 }
@@ -13,9 +14,140 @@ h1,h2,h3,h4,h5,h6{
     margin: 0px;
     color: #222222;
 }
- #main-container{
-    width: 100vw;
-} 
+.main-container{
+    /* width: 100vw; */
+}
+.top-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 20px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    padding: ;
+}
+.top-menu .logo{
+}
+.top-menu .logo figure{
+    display: flex;
+    align-items: center;
+    height: 35px;
+}
+.top-menu .logo figure img{
+    height: 100%;
+    filter: invert(1);
+}
+
+.top-menu .navegacao{
+    display: flex;
+    justify-content: space-around;
+}
+.top-menu .navegacao a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding:10px;
+}
+
+.top-menu .user-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.top-menu .user-section a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.top-menu .user-section .ser-anfitriao{
+    padding: 12px;
+    border-radius: 50px;
+}
+.top-menu .user-section .ser-anfitriao:hover{
+    background-color: rgba(255, 255, 255, 10%);
+}
+.top-menu .user-section .lingua{}
+
+.top-menu .user-section .lingua figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:12px;
+    border-radius: 50%;
+    
+}
+.top-menu .user-section .lingua figure:hover{
+    background-color: rgba(255, 255, 255, 10%);
+}
+
+.top-menu .user-section figure img{
+    filter: invert(1);
+    height: 18px;
+    width: 18px;
+}
+.top-menu .user-section .perfil{
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 77px;
+    height: 42px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.top-menu .user-section .perfil figure{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+.top-menu .user-section .perfil figure img{
+    width: 100%;
+    height: 80%;
+    margin: auto 0px;
+    filter: invert(0);
+}
+.top-menu .user-section .perfil .avatar{
+    height: 100%;
+}
+
+.top-menu .user-section .perfil-menu{
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    overflow: hidden;
+    display: none;
+}
+.hidden{
+    display: block !important;
+}
+.top-menu .user-section .perfil-menu ul{
+    list-style: none;
+    color: #000;
+    padding: 0px;
+    margin: 0px;
+}
+.top-menu .user-section .perfil-menu ul li{
+    padding: 15px 20px;
+}
+.top-menu .user-section .perfil-menu ul li:hover{
+    background-color: #f7f7f7;
+}
+.top-menu .user-section .perfil-menu ul li a{
+    color: #000;
+    font-size: 18px;
+}
+
+
+
+
+
+
 header{
     display: flex;
     justify-content: center;
@@ -24,6 +156,7 @@ header{
 }
 header .pesquisa{
     width: 80%;
+    max-width: 600px;
 }
 header .pesquisa input{
     border-radius: 50px;
@@ -40,9 +173,10 @@ section h3{
     padding: 0px 20px;
 }
 #chamada{
-    height: 470px;
+    height: 80vh;
     background-image: url(/assets/asset\ 0.webp);
-    background-size: cover;
+    background-position:bottom;
+    background-size:cover;
 }
 #chamada .container{
     margin: 0px auto;
@@ -248,6 +382,47 @@ footer .lista ul li a{
         background-image: url(/assets/hospede-big-bg.webp);
         background-size: cover;
         height: 50vw;
+        max-height: 500px;
+    }
+    header .pesquisa{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    header .pesquisa figure{
+        position: absolute;
+        display: inline-block;
+        margin: 20px 8px;
+        height: 30px;
+        width: 30px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #ff385c;
+
+        
+    }
+    header .pesquisa figure img{
+        height: 30px;
+        width: 30px;
+        filter: invert(1);
+
+    }
+
+    header .pesquisa input{
+        height: 60px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        padding:20px;
+        box-sizing: border-box;
+        color: #707070;
+        font-size: 20px;
+    }
+    header .pesquisa input:focus{
+        border: 0 none;
+        border-style: none;
+        outline: none;
     }
     #hospedar .info .texto{
         width: 300px;
@@ -280,5 +455,11 @@ footer .lista ul li a{
         max-width: 300px;
         max-height: 300px;
         width: 30vw !important;
+    }
+}
+@media screen and (min-width: 1444px){
+    .main-container{
+        margin: 0px auto;
+        width: 1444px;
     }
 }
