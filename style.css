@@ -198,7 +198,7 @@ section h3 {
 #chamada {
   height: 80vh;
   min-height: 500px;
-  background-image: url(/assets/asset0.png);
+  background-image: url(/img/asset0.png);
   background-position: bottom;
   background-size: cover;
 }
@@ -319,7 +319,7 @@ section h3 {
   width: auto;
   margin: 0px 20px;
   min-width: 280px;
-  background-image: url(/assets/asset13.png);
+  background-image: url(/img/asset13.png);
   background-size: 100% 100%;
   border-radius: 15px;
   padding: 25px;
@@ -415,7 +415,7 @@ footer .lista ul li a {
     justify-content: flex-start;
     margin: 0px 20px;
     width: auto;
-    background-image: url(/assets/hospede-big-bg.png);
+    background-image: url(/img/hospede-big-bg.png);
     background-size: cover;
     height: 50vw;
     max-height: 500px;
